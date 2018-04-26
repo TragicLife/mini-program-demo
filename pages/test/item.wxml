@@ -1,0 +1,6 @@
+<view>
+    我是item.wxml
+</view>
+<template name="item">
+    <text>我是item.wxml里的{{name}}</text>
+</template>

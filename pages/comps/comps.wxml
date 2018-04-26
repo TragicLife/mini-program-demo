@@ -1,0 +1,12 @@
+<view class="flex-wrap">
+  <view class="a">a</view>
+  <view class="b">b</view>
+  <view class="c">c</view>
+</view>
+
+<!-- scroll-view -->
+<scroll-view class="wrap" scroll-y="true" bindscrolltolower="bottomHandler">
+    <view class="a">a</view>
+    <view class="b">b</view>
+    <view class="c">c</view>
+</scroll-view>

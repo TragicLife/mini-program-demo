@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/comps/comps",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#219bf3",
+    "navigationBarTitleText": "Hello World",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#eee",
+    "color": "#999",
+    "position": "bottom",
+    "selectedColor": "#000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./res/tab_bar/home.png",
+      "selectedIconPath": "./res/tab_bar/home-active.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "./res/tab_bar/log.png",
+      "selectedIconPath": "./res/tab_bar/log-active.png"
+    }, {
+      "pagePath": "pages/test/test",
+      "text": "测试",
+      "iconPath": "./res/tab_bar/account.png",
+      "selectedIconPath": "./res/tab_bar/account-active.png"
+    }, {
+      "pagePath": "pages/comps/comps",
+      "text": "组件",
+      "iconPath": "./res/tab_bar/account.png",
+      "selectedIconPath": "./res/tab_bar/account-active.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

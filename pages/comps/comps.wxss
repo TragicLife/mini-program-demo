@@ -1,0 +1,50 @@
+/* .flex-wrap {
+    display: flex;
+}
+
+.flex-wrap view {
+    width: 200rpx;
+    height: 200rpx;
+    text-align: center;
+    font-size: 40rpx;
+}
+
+.a {
+    flex: 1;
+    background-color: green;
+}
+
+.b {
+    flex: 1;
+    background-color: red;
+}
+
+.c {
+    flex: 2;
+    background-color: blue;
+} */
+
+/* scroll-view */
+
+.wrap {
+    width: 400rpx;
+    height: 400rpx;
+    border: 1px solid #000;
+}
+
+.wrap view {
+    width: 250rpx;
+    height: 250rpx;
+}
+
+.a {
+    background-color: green;
+}
+
+.b {
+    background-color: red;
+}
+
+.c {
+    background-color: blue;
+}

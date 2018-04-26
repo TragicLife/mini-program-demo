@@ -1,0 +1,12 @@
+<view>
+    <template name="object">
+        <view>第一个对象：{{a}}</view>
+        <view>{{b}}</view>
+        <view>{{name}}</view>
+    </template>
+    <!-- <template is="object" data="{{...obj, name: name}}"></template> -->
+    <template is="object" data="{{...obj, b: 11}}"></template> <!-- 标签上的属性会覆盖js传过来的属性 -->
+</view>
+
+<import src="./item.wxml" />
+<template is="item" data="{{name}}"></template>
