@@ -1,12 +1,100 @@
-<view class="flex-wrap">
+<!-- <view class="flex-wrap">
   <view class="a">a</view>
   <view class="b">b</view>
   <view class="c">c</view>
 </view>
-
-<!-- scroll-view -->
-<scroll-view class="wrap" scroll-y="true" bindscrolltolower="bottomHandler">
-    <view class="a">a</view>
-    <view class="b">b</view>
-    <view class="c">c</view>
+<scroll-view class="wrap" scroll-y="true" bindscrolltolower="bottomHandler" scroll-top="{{scrollTop}}" scroll-with-animation="true" enable-back-to-top="true">
+  <view class="{{item}}" id="{{item}}" wx:for="{{arr}}" wx:key="{{index}}">{{item}}</view>
 </scroll-view>
+<view>
+  <swiper class="swiper-container" indicator-dots="true" autoplay="true" interval="{{swiperInterval}}">
+    <swiper-item wx:for="{{swipers}}" wx:key="{{index}}">
+      <image class="swiper-img" src="{{item}}" />
+    </swiper-item>
+  </swiper>
+</view>
+<view>
+  <slider min="500" max="5000" step="100" bindchange="intervalChange" show-value></slider>
+</view> -->
+<!-- <view>
+   <icon type="success" size="23" color="blue"></icon>
+   <icon wx:for="{{icons}}" type="{{item}}" wx:key="{{index}}"></icon>
+ </view>
+ <view>
+   <text>这是一段测试文字</text>
+ </view>
+ <view>
+   <progress percent="80" stroke-width="1" show-info active></progress>
+ </view> -->
+<!-- <view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <label>
+      姓名
+      <input type="text" name="name" placeholder="请输入姓名" placeholder-class="my-input-placeholder"></input>
+    </label>
+    <label>
+      密码
+      <input type="text" name="password" placeholder="请输入密码" placeholder-style="{{inputPlaceholder}}" password></input>
+    </label>
+    <checkbox-group name="checks">
+      <label class="checkbox" wx:for="{{items}}" wx:key="{{index}}">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+        {{item.value}}
+      </label>
+    </checkbox-group>
+    <view class="section">
+      <view class="section__title">普通选择器</view>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="picker">
+        <view class="picker">当前选择：{{array[index]}}</view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">多列选择器</view>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="picker">
+          当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{radios}}" wx:key="{{index}}">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />
+          {{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view>
+      <switch name="switch"></switch>
+    </view>
+    <view>
+      <textarea class="textarea" auto-height></textarea>
+    </view>
+    <button type="primary" size="mini" form-type="submit" plain loading="{{hasSubmited}}">
+      提交
+    </button>
+    <button type="default" size="mini" form-type="reset" plain>重置</button>
+  </form>
+</view> -->
+<!-- <view>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+  <view>
+    <button type="primary" size="mini" bindtap="audioPlay" plain>播放</button>
+    <button type="primary" size="mini" bindtap="audioPause" plain>暂停</button>
+    <button type="primary" size="mini" bindtap="audio14" plain>设置当前播放时间为14秒</button>
+    <button type="primary" size="mini" bindtap="audioStart" plain>回到开头</button>
+  </view>
+</view>
+<view class="section tc">
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">获取视频</button>
+    <input type="text" bindinput="bindInput"></input>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view> -->
+<!-- <view>
+  <map id="map" longitude="{{mapTude.langitude}}" latitude="{{mapTude.latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+  <button bindtap="getLocation">获取坐标</button>
+</view> -->
+<include src="./canvas.wxml"></include>
